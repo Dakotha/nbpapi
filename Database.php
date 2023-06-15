@@ -10,7 +10,7 @@ class Database
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
         try {    
-            $this->connection = new PDO($dsn, null, null, [
+            $this->connection = new PDO($dsn, $config['user'], $config['password'], [
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
             ]);
         } catch(PDOException $e) {
