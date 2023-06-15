@@ -40,9 +40,10 @@ CREATE TABLE
   `converts` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
     `date` timestamp NOT NULL DEFAULT current_timestamp(),
+    `amount` float NOT NULL,
     `from` varchar(255) NOT NULL,
     `to` varchar(255) NOT NULL,
     `convert` float NOT NULL,
     PRIMARY KEY (`id`)
-  ) ENGINE = InnoDB AUTO_INCREMENT = 6 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_bin
+  ) ENGINE = InnoDB AUTO_INCREMENT = 7 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_bin
 ```

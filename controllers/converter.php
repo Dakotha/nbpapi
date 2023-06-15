@@ -32,7 +32,8 @@ if (empty($errors) && $_POST['amount'] && $_POST['from'] && $_POST['to']) {
 
     $convert = round(($amount / $to) * $from, 2);
 
-    $db->query('INSERT INTO converts (`from`, `to`, `convert`) VALUES (:from, :to, :convert)', [
+    $db->query('INSERT INTO converts (`amount`, `from`, `to`, `convert`) VALUES (:amount, :from, :to, :convert)', [
+        'amount' => trim(htmlspecialchars($_POST['amount'])),
         'from' => trim(htmlspecialchars($_POST['from'])),
         'to' => trim(htmlspecialchars($_POST['to'])),
         'convert' => $convert 

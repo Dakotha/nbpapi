@@ -75,6 +75,7 @@
                             <thead class="bg-gray-50">
                                 <tr>
                                     <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Data</th>
+                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Kwota</th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Z:</th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Na:</th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Wartość</th>
@@ -85,6 +86,7 @@
                                 <?php foreach ($converts as $convert) : ?>
                                     <tr class="hover:bg-gray-100">
                                         <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 capitalize"><?= date('d-m-Y', strtotime($convert['date'])) ?></td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $convert['amount'] ?></td>
                                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $convert['from'] ?></td>
                                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $convert['to'] ?></td>
                                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $convert['convert'] ?></td>
