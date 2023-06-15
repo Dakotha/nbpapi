@@ -47,3 +47,8 @@ CREATE TABLE
     PRIMARY KEY (`id`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 7 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_bin
 ```
+## Demo aplikacji
+
+Działającą aplikację można przetestować pod poniższym adresem:
+
+[https://nbpapi.robb.cfolks.pl/](https://nbpapi.robb.cfolks.pl/)
